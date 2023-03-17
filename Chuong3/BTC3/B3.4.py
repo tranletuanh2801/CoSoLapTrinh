@@ -14,5 +14,5 @@ elif 7<=ĐTB<8:
     print("Kha")
 elif 8<=ĐTB<9:
     print("Gioi")
-elif 9<=ĐTB<10:
+else:
     print("Xuat sac")
