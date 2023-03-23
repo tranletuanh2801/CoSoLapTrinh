@@ -1,9 +1,12 @@
-n=int(input("n="))
-if n==0:
-    print(n=0)
+print("n=",end="")
+n=int(input())
+if n>=1:
+    giaithua=1
+    for i in range(1,n+1):
+        giaithua=giaithua*i
+    print(n,"!=",giaithua,sep="")
+elif n==0:
+    giaithua=1
+    print(n,"!=",giaithua,sep="")
 else:
-    s=1
-    for i in range(1,101):
-        s=s*i
-        print(n,"!=",s,end="")
-print()
+    print("Nhạp lại n>=0")
