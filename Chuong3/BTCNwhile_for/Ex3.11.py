@@ -8,6 +8,7 @@ while True:
         so_am+=1
     else:
         so_duong+=1
-print(so_am,"so am")
 print(so_duong,"so duong")
+print(so_am,"so am")
+
     
