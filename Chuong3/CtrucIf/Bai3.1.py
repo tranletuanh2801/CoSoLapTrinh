@@ -1,6 +1,6 @@
-a=float(input("a= "))
-b=float(input("b= "))
-c=float(input("c= "))
+a=float(input("a="))
+b=float(input("b="))
+c=float(input("c="))
 max=a
 min=a
 if(b>max):
@@ -11,5 +11,5 @@ if(b<min):
     min=b
 if(c<min):
     min=c
-print("SLN: ",max)
-print("SBN: ",min)
+print("SLN:",max,sep="")
+print("SBN:",min,sep="")
