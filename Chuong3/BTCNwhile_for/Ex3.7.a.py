@@ -15,3 +15,5 @@ while True:
         print(s)
     else:
         break
+    
+#giai thừa
