@@ -17,3 +17,24 @@
 #     for j in range(1,n+2-i):
 #         print("*",end=" ")
 #     print()  tam giác ngược
+
+a = int(input("Nhập số nguyên dương a: "))
+b = int(input("Nhập số nguyên dương b: "))
+
+# Đảm bảo a ≤ b để thuận tiện cho việc tính toán
+if a > b:
+    a, b = b, a
+
+# Tìm USCLN
+while b > 0:
+    r = a % b
+    a = b
+    b = r
+uscln = a
+
+# Tìm BSCNN
+bscnn = (a * b) // uscln
+
+# In kết quả
+print("USCLN của", a, "và", b, "là:", uscln)
+print("BSCNN của", a, "và", b, "là:", bscnn)
