@@ -1,7 +1,7 @@
 def nhap():
     n=input("Nhap toan tu:")
     return n
-def toan_tu(x):
+def precedence(x):
     if x =="+" or x=="-":
         t=1
     elif x=='*' or x=='/':
@@ -18,5 +18,5 @@ def inkq(t):
         print("Độ ưu tiên của toán tử",n,"là",t)
     
 n=nhap()
-x=toan_tu(n)
+x=precedence(n)
 inkq(x)
