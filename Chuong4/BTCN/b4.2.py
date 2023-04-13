@@ -4,7 +4,7 @@ def nhap():
 def inkq(n):
     for i in range(2,n+1,2):
         print(i,end=" ")
-    print()
+    print()    
 while True:
     n=nhap()
     inkq(n)
