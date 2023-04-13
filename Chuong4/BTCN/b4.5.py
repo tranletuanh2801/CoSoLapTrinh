@@ -11,10 +11,11 @@ def SoHopLe(x):
     else:
         return False
 def NhapVaDem():
+    print("Nhap day so:")
     dem=0
     nums = []
     while True:
-        x =int(input("Nhap day so: "))
+        x =int(input())
         if SoHopLe(x):
             break
         nums.append(x)
@@ -24,7 +25,7 @@ def NhapVaDem():
 def InKQ(kq):
     nums = kq[0]
     dem=kq[1]
-    print("Nhap day so:\n", " ".join(map(str, nums)))
+    # print("Nhap day so:\n", " ".join(map(str, nums)))
     print("Co", dem, "so nguyen to")
 
 result = NhapVaDem()

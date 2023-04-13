@@ -8,7 +8,7 @@ def nhap():
 def giaipt(a,b,c):
     d=b*b-4*a*c
     if d<0:
-        return "Phuong trinh vo nghiem"
+        return ""
         # print("Phuong trinh vo nghiem")
     elif d==0:
         x1=(-b/2*a)
@@ -22,7 +22,7 @@ def giaipt(a,b,c):
         # print("Phuong trinh co hai nghiem")
         # print("x1=",x1,sep="")
         # print("x2=",x2,sep="")
-def inkq(x1, x2):
+def inkq(x1,x2):
     if giaipt(a,b,c):
         print("Phuong trinh vo nghiem")
     elif giaipt(a,b,c):
@@ -30,7 +30,6 @@ def inkq(x1, x2):
         print("x1=x2=",x1,sep="")
     else:
         print("Phuong trinh co hai nghiem")
-    # print("Nghiem cua phuong trinh la:")
         print("x1=",x1,sep="")
         print("x2=",x2,sep="")
 a,b,c=nhap()

@@ -20,8 +20,8 @@
 #slide30
 # catNames=[]
 # while True:
-#     print("Enter the nam of cat"+ str(len(catNames)+1)+"(Or enter nothing to stop.):")
-#     name=input()
+#     print("Enter the nam of cat"+ str(len(catNames)+1)+"(Or enter nothing to stop.):") 
+#     name=input() 
 #     if name=="":
 #         break
 #     catNames=catNames+[name]
