@@ -1,11 +1,17 @@
 def add(L,x,k):
     if k>len(L):
-        L=L+[k] # them vao cuoi
+        L=L+[x]
+    elif k==0:
+        L=[x]+L
     else: #chèn vào vị trí k
-        L=L[:k-1]+[x]+L[k-1:]
+        L=L[:k]+[x]+L[k:]
     return L
-L=[1,2,3,4,5]
-x=10
-k=3
-L=add(L,x,k)
+L=[1,2,3,4,5,6,7]
+
+L=add(L,10,0)
 print(L)
+L=add(L,15,3)
+print(L)
+L=add(L,20,100)
+print(L)
+

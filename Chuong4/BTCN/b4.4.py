@@ -12,7 +12,7 @@ def max3(a,b,c):
         kq=c
     return kq
 def inkq(kq):
-    print("So lon nhat la: ",kq,sep="")
+    print("So lon nhat la:",kq)
 a,b,c=nhap()
 kq=max(a,b,c)
 inkq(kq)
