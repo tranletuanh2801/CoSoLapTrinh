@@ -6,10 +6,11 @@ def Input():
         L.append(a)
     return L
 def Loai_Bo(L):
-    A=[]
+    M=[]
     for i in L:
-        if i not in A:
-            A.append(i)
-    print(A)
+        if i not in M:
+            M.append(i)
+    for i in M:
+        print(i,end=" ")
 L=Input()
 Loai_Bo(L)
