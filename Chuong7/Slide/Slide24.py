@@ -1,9 +1,18 @@
-while True:
-    a=input("a=")
-    b=input("b=")
-    if a.isnumeric() and b.isnumeric():
-        bth=a+b
-        print("a+b=",bth)
-        break
+
+def NhapSo(tb):
+    while True:
+        a=input(tb)
+        if a.isnumeric():
+            return int(a)
+        else:
+            print("Khong hop le!")
+
+
+a=NhapSo("a=")
+b=NhapSo("b=")
+print("a=",a,sep="")
+print("b=",b,sep="")
+
+        
     
     
