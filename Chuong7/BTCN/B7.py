@@ -1,9 +1,12 @@
-import re
-string = input()
-# Tìm chuỗi email trong chuỗi đầu vào bằng biểu thức chính quy
-match = re.search(r'[\w\.-]+@[\w\.-]+\.[\w\.]+', string)
-# In kết quả tìm được hoặc in chuỗi rỗng nếu không tìm thấy
-if match:
-    print(match.group())
-else:
-    print()
+def Input():
+    thongtin=input()
+    return thongtin
+def tach(thongtin):
+    tach=thongtin.split('Email:')
+    email=tach[-1].strip()
+    if email=='':
+        print()
+    else:
+        print(email)
+thongtin=Input()
+tach(thongtin)
