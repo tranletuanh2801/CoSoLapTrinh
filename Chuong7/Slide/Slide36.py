@@ -1,25 +1,16 @@
-# st='''--Người---đâu-gặp---gỡ-làm-chi---
-# Trăm----năm-biết-có---duyên---gì--hay--không.
-# Ngổn-ngang---trăm-mói---bên---lòng----
-# ----Nên-câu---tuyệt--diệu-ngụ-trong-tính-tình.'''
-# L=st.split('-')
-# print(L)
+st='''--Người---đâu-gặp---gỡ-làm-chi---
+Trăm----năm-biết-có---duyên---gì--hay--không.
+Ngổn-ngang---trăm-mói---bên---lòng----
+----Nên-câu---tuyệt--diệu-ngụ-trong-tính-tình.'''
+def XuLyDong(xau):
+    L=xau.split('-') #tách mỗi từ trong xâu bằng dấu -
+    while '' in L: #Xoá tất cả các ký tự rỗng trong list L
+        L.remove('')
+    return ' '.join(L)  # nối mỗi từ trong L thành một xâu st
 
+def TienXuLy(st):
+    L=st.split('\n') #tách mỗi dòng thành 1 phần tử của list L
+    for dong in L:
+        print(XuLyDong(dong)) #Xử lý từng dòng
 
-text = "--Người---đâu-gặp---gỡ-làm-chi---\nTrăm----năm-biết-có---duyên---gì--hay--không.\nNgổn-ngang---trăm-mối---bên---lòng----\n----Nên-câu---tuyệt--diệu-ngụ-trong-tính-tình."
-
-# Xóa các ký tự "-" thừa ở đầu và cuối câu
-text = text.strip("-")
-
-# Xóa các ký tự "-" thừa ở giữa câu và thay thế bằng khoảng trắng
-text = text.replace("--", " ")
-text = text.replace("---", " ")
-
-# Chuẩn hóa khoảng trắng
-text = " ".join(text.split())
-
-# Viết hoa chữ cái đầu tiên của mỗi câu
-text = ". ".join([sentence.capitalize() for sentence in text.split(".")])
-
-# In đoạn văn bản đã được xử lý
-print(text)
+TienXuLy(st)

@@ -1,10 +1,10 @@
 str=input()
-dem1=0
-dem2=0
+dem_tu=0
+dem_so=0
 for i in str:
     if i.isalpha():
-        dem1+=1
+        dem_tu+=1
     elif i.isnumeric():
-        dem2+=1
-print("chu cai:",dem1)
-print("chu so:",dem2)
+        dem_so+=1
+print("chu cai:",dem_tu)
+print("chu so:",dem_so)
