@@ -1,13 +1,16 @@
 def Nhap():
-    str=input().split(' ')
-    x=int(input())
-    return str,x
-def In(str,x):
-
+    str=list(map(int,input().split(' ')))
+    s=int(input())
+    return str,s
+def XuLy(st,s):
+    vi_tri=[]
     for i in range(len(str)):
-        if int(str[i])==x:
-            return i+1
-    return 0
-str,x=Nhap()
-print(In(str,x))   
-    
+        if str[i]==s:
+            vi_tri.append(i+1)       
+    if len(vi_tri)==0:
+        print('0')
+    else:
+        for j in vi_tri:
+            print(j)          
+str,s=Nhap()
+XuLy(str,s)
