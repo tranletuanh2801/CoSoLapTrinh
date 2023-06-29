@@ -14,3 +14,6 @@ def TienXuLy(st):
         print(XuLyDong(dong)) #Xử lý từng dòng
 
 TienXuLy(st)
+
+
+
