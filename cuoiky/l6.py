@@ -27,25 +27,26 @@
 # for i in L:
 #     print(i,end=' ')
 
-# def nhap():
-#     n=int(input())
-#     return n
-# def xuly(n):
-#     if n<=0:
-#         return None
-#     max=0
-#     tu=''
-#     for i in L:
-    
-#     for i in range(len(L)):
-#         if len(i)<=0:
-#             print(None)
-#         else:
-#             len(i)=max
-#             print(i)
-#             print(len(i))
-# L=nhap()
-# xuly(L)
+def Input():
+    n=int(input())
+    L=[]
+    for i in range(n):
+        a=input()
+        L.append(a)
+    return n,L
+def Output(n,L):
+    if n<=0:
+        return None
+    max=0
+    tu=''
+    for a in L:
+        if len(a)>max:
+            max=len(a)
+            tu=a
+    print(max)
+    print(tu)
+n,L=Input()
+Output(n,L)
 
         
     
