@@ -31,34 +31,49 @@
 # print(kq)
 
 # # cau4 tinh tong cac so
-# n = input()
-# tong = 0
-# for i in range(len(n)):
-#     if n[i].isnumeric():
-#         if n[i - 1] == '-':
-#             tong -= int(n[i])
-#         else:
-#             tong += int(n[i])
-# print(tong)
+def Input():
+    st=input()
+    return st
+def Output(st):
+    tong=0
+    for i in range(len(st)):
+        if st[i].isnumeric():
+            if st[i-1]=='-':
+                tong-=int(st[i])
+            else:
+                tong+=int(st[i])
+    print(tong)
+st=Input()
+Output(st)
 
 # # cau3 xao khoan trang
-# n = input()
-# for i in n:
-#     if i.isspace():
-#         n = n.replace(i,'')
-# print(n)
+# def Input():
+#     st=input()
+#     return st
+# def Output(st):
+#     for i in st:
+#         if i.isspace():
+#             st=st.replace(i,'')
+#     print(st)
+# st=Input()
+# Output(st)
 
 # # cau 1. chan/le
-# chan = []
-# le = []
-# n = input().split()
-# for i in n:
-#     if int(i) % 2 == 0:
-#         chan.append(int(i))
-#     else:
-#         le.append(int(i))
-# print(le)
-# print(chan)
+def Input():
+    n=input().split()
+    return n
+def Output(n):
+    L1=[]
+    L2=[]
+    for i in n:
+        if int(i)%2!=0:
+            L1.append(int(i))
+        else:
+            L2.append(int(i))
+    print(L1)
+    print(L2)
+n=Input()
+Output(n)
 
 # # cau2 xoa phan tu
 # n = input().split()
@@ -81,3 +96,17 @@
 # elif len(n) >= 2:
 #     del (n[1])
 # print(n)
+
+def Input():
+    st=input().split()
+    return st
+def Output(st):
+    if len(st)>=2:
+        del(st[1])
+        if len(st)>=3:
+            del(st[2])
+            if len(st)>=3:
+                del(st[2])
+    print(st)
+st=Input()
+Output(st)
